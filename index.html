@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/styles.css" />
+		<title>Weather App</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="weather-app">
+				<form class="search-form" id="search-form">
+					<div class="row">
+						<div class="col">
+							<input
+								type="search"
+								placeholder="Type a city.."
+								autofocus="on"
+								autocomplete="off"
+								id="city-input"
+								class="form-control shadow-sm"
+							/>
+						</div>
+						<div class="col-3 p-0">
+							<input
+								type="submit"
+								value="Search"
+								class="form-control btn shadow-sm"
+							/>
+						</div>
+					</div>
+					<div class="row top-block">
+						<div class="col">
+							<ul id="weatherdata">
+								<li id="date"></li>
+								<li id="description">Cloudy</li>
+							</ul>
+						</div>
+						<p class="col" id="city">KYIV</p>
+					</div>
+					<div class="row bottom-block">
+						<div class="col">
+							<div class="clearfix">
+								<span class="temperature" id="temperature">19</span>
+								<span class="units">
+									<a href="#" id="celsius-link">°C</a> |
+									<a href="#" id="fahrenheit-link">°F</a>
+								</span>
+							</div>
+						</div>
+						<div class="col">
+							<ul class="windhumidity" id="weatherdata">
+								<li>Humidity: <span id="humidity">77</span>%</li>
+								<li>Wind: <span id="wind"></span> km/h</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<a
+			href="https://github.com/MashaKornieieva/SheCodes_App"
+			target="blank"
+			id="github"
+			>GitHub repository</a
+		>
+		<script src="src/index.js"></script>
+	</body>
+</html>
